@@ -1,5 +1,5 @@
-let &t_EI = "\1\e[2 q\2"
-let &t_SI = "\e[1 q"
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 set encoding=utf8
 set scrolloff=8
@@ -9,7 +9,7 @@ set tabstop=4 softtabstop=4 shiftwidth=4
 set expandtab
 set smartindent
 set list
-set listchars=tab:»·,extends:>,trail:·
+set listchars=tab:\ \ ┊,extends:>,trail:·
 set ruler
 set colorcolumn=88
 set wildignorecase
@@ -47,6 +47,7 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary', {'branch': 'master'}
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'machakann/vim-highlightedyank'
 Plug 'arcticicestudio/nord-vim'
@@ -54,3 +55,4 @@ call plug#end()
 
 colorscheme nord
 let g:nord_bold_vertical_line = 1 
+set colorcolumn=88
