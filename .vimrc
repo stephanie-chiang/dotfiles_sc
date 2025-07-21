@@ -3,7 +3,6 @@ let &t_EI = "\e[2 q"
 
 set encoding=utf8
 set scrolloff=8
-set number
 set relativenumber
 set tabstop=4 softtabstop=4 shiftwidth=4
 set smartindent
