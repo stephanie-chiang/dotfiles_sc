@@ -6,19 +6,20 @@ set scrolloff=8
 set number
 set relativenumber
 set tabstop=4 softtabstop=4 shiftwidth=4
-set expandtab
 set smartindent
 set list
 set listchars=tab:\ \ ┊,extends:>,trail:·
 set ruler
-set colorcolumn=88
 set wildignorecase
 set incsearch
-set hls ic
+set hlsearch
 set mouse=a
 set hidden
 set termguicolors
-
+set statusline=%f
+set statusline+=%m
+set statusline+=%<%h%r%=%b\ 0x%B\ \%l,%v\ %P
+set showcmd
 syntax on
 filetype indent on
 filetype plugin on
